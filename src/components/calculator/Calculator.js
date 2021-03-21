@@ -3,10 +3,34 @@ import Result from '../result/Result';
 import ButtonDisplay from '../buttonDisplay/ButtonDisplay';
 
 const Calculator = () => {
-    const [result, setResult] = useState(0);
+    const [result, setResult] = useState("");
 
-    function onClick(e) {
-        console.log(e);
+    function onClick(button) {
+        console.log(button);
+        if(button === "=") {
+            calculate();
+        } 
+        else if(button === "C") {
+            reset();
+        }
+        else if(button === "CE") {
+            backspace();
+        }
+        else {
+            setResult(result + button);
+        }
+    }
+
+    function calculate() {
+        console.log("calculate");
+    }
+
+    function reset() {
+        console.log("reset");
+    }
+
+    function backspace() {
+        console.log("back space");
     }
 
     return (

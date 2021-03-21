@@ -1,6 +1,6 @@
 const Result = (props) => {
     return(
-        <div>
+        <div className="result">
             <p>{props.result}</p>
         </div>
     );
