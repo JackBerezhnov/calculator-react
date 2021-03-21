@@ -26,7 +26,7 @@ const Calculator = () => {
     }
 
     function reset() {
-        console.log("reset");
+        setResult("");
     }
 
     function backspace() {
