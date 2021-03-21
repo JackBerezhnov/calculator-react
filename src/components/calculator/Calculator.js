@@ -22,7 +22,19 @@ const Calculator = () => {
     }
 
     function calculate() {
-        console.log("calculate");
+       let checkResult = '';
+       if(result.includes('--')) {
+            checkResult = result.replace('--','+')
+       } 
+       else {
+            checkResult = result;
+       }
+
+       try {
+           setResult(eval(checkResult) || "");
+       } catch(e) {
+           setResult("error");
+       }
     }
 
     function reset() {
