@@ -30,7 +30,7 @@ const Calculator = () => {
     }
 
     function backspace() {
-        console.log("back space");
+        setResult(result.slice(0, -1));
     }
 
     return (
