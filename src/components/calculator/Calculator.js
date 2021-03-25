@@ -48,7 +48,7 @@ const Calculator = () => {
     }
 
     return (
-        <div className="container">
+        <div className="calculator">
             <Result result={result}/>
             <ButtonDisplay onClick={onClick}/>
         </div>
