@@ -1,6 +1,8 @@
+import './Calculator.css';
 import React, { useState } from 'react';
 import Result from '../result/Result';
 import ButtonDisplay from '../buttonDisplay/ButtonDisplay';
+
 
 const Calculator = () => {
     const [result, setResult] = useState("");
@@ -46,8 +48,7 @@ const Calculator = () => {
     }
 
     return (
-        <div>
-            <h1>Calculator</h1>
+        <div className="container">
             <Result result={result}/>
             <ButtonDisplay onClick={onClick}/>
         </div>
