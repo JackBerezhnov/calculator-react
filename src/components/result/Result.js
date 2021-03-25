@@ -1,7 +1,7 @@
 const Result = (props) => {
     return(
         <div className="result">
-            <p>{props.result}</p>
+            <input value={props.result} />
         </div>
     );
 }
